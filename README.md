@@ -15,6 +15,12 @@ If you use this dataset please cite:
 
 # Training Data
 
+# Test Data
+
+# Evaluation Scheme
+
+The intrinsic evaluation will be done by ROUGE, using ROUGE-1, -2, -L metrics. In addition to that, BERTScore would be used. The average of the scores obtained against the multiple summaries would be used for final ranking.
+
 ### Submission Instructions
 
 Evaluation Script: 
