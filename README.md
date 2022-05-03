@@ -1,6 +1,6 @@
 # Multi Perspective Scientific Document Summarization
 
-This repository contains the dataset and baseline models for the Multi Perspective Scientific Document Summarization (MuP) shared task to be held at [SDP 2022](https://sdproc.org/2022/index.html).
+This repository contains the dataset and baseline models for the Multi Perspective Scientific Document Summarization (MuP) shared task to be held at [SDP in COLING 2022](https://sdproc.org/2022/index.html).
 
 ### Intoduction
 
