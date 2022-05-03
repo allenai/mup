@@ -15,6 +15,16 @@ The corpus contains a total of 12K papers, and 27K summaries (with average numbe
 
 ### Shared Task Timelines
 
+Training Data Release:
+Test Data Release:
+Evaluation Period:
+Results Submission:
+Notification:
+System Description Papers Due:
+Reviews Notification:
+Camera-Ready Papers Due:
+Event at SDP @ COLING 2022:
+
 ### License
 
 ### Disclaimer
