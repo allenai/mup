@@ -21,3 +21,8 @@ The corpus contains a total of 12K papers, and 27K summaries (with average numbe
 
 ### MuP 2022 Organizers
 
+1. Guy Feigenblat
+2. Arman Cohan
+3. Tirthankar Ghosal
+4. Michal Shmueli-Scheuer
+
