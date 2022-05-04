@@ -27,15 +27,15 @@ Evaluation Script:
 
 ### Shared Task Timelines
 
-Training Data Release:  <br />
-Test Data Release:  <br />
-Evaluation Period:  <br />
-Results Submission:  <br />
-Notification:  <br />
-System Description Papers Due:  <br />
-Reviews Notification:  <br />
-Camera-Ready Papers Due:  <br />
-Event at SDP @ COLING 2022:  <br />
+Training Data Release:  May 10, 2022  <br />
+Test Data Release:  June 30, 2022 <br />
+Evaluation Period:  July 15, 2022 <br />
+Results Submission:   <br />
+Notification:   <br />
+System Description Papers Due:  August 1, 2022<br />
+Reviews Notification:  August 15, 2022 <br />
+Camera-Ready Papers Due:  September 5, 2022<br />
+Event at SDP @ COLING 2022:  October 16/17, 2022<br />
 
 ### License
 
@@ -43,8 +43,8 @@ Event at SDP @ COLING 2022:  <br />
 
 ### MuP 2022 Organizers
 
-1. Guy Feigenblat
-2. Arman Cohan
-3. Tirthankar Ghosal
-4. Michal Shmueli-Scheuer
+1. [Guy Feigenblat - Piiano](https://Piiano.com)
+2. [Arman Cohan- AI2](http://armancohan.com/)
+3. [Tirthankar Ghosal- Institute of Formal and Applied Linguistics, Charles University, Czech Republic](https://elitr.eu/tirthankar-ghosal/)
+4. [Michal Shmueli-Scheuer - IBM Research AI](https://researcher.watson.ibm.com/researcher/view.php?person=il-SHMUELI)
 
