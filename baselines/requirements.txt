@@ -1,0 +1,5 @@
+torch=1.11.0
+-e git+https://github.com/huggingface/transformers.git@7455b9a0e15ad8aa5316718f51bdb61585f77b95#egg=transformers
+nltk
+datasets
+rouge_score
