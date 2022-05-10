@@ -32,7 +32,7 @@ The intrinsic evaluation will be done by ROUGE, using ROUGE-1, -2, -L metrics. I
 
 ### Submission Instructions
 
-Evaluation Script: 
+Evaluation Script: https://github.com/allenai/mup/blob/main/scoring_program/evaluate.py
 
 ### Shared Task Timelines
 
