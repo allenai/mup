@@ -57,8 +57,6 @@ Evaluation Script: https://github.com/allenai/mup/blob/main/scoring_program/eval
 Training Data Release:  May 10, 2022  <br />
 Test Data Release:  June 30, 2022 <br />
 Evaluation Period:  July 15, 2022 <br />
-Results Submission:   <br />
-Notification:   <br />
 System Description Papers Due:  August 1, 2022<br />
 Reviews Notification:  August 15, 2022 <br />
 Camera-Ready Papers Due:  September 5, 2022<br />
