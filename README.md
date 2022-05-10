@@ -21,10 +21,28 @@ If you use this dataset please cite:
 
 ### MuP Data and Instructions
 
-# Training Data
+The dataset is hosted on Huggingface.
+https://huggingface.co/datasets/allenai/mup
 
+You can easily download and use the dataset as following:
+
+```python
+# pip install datasets
+
+from datasets import load_dataset
+
+data = load_dataset('allenai/mup')
+
+print(data['train'].shape[0])  # should print 18934
+print(data['validation'].shape[0])  # should print 3604
+```
+
+We encourage that you try your development on the validation data and use the training set for both training and hyperparameter tuning. 
+Please do not use the validation data for training. 
 
 # Test Data
+
+Test data will be released at the evaluation stage. See the timeline below.
 
 # Evaluation Scheme
 
