@@ -12,10 +12,13 @@ The corpus contains a total of 8.5K papers, and 19K summaries (with average numb
 This is the distribution of number of summaries:
 | Num of Summaries | Num of Papers |
 | --- | --- |
-| 1| 2315 |
-| 2| 2880 |
-| 3 | 2153 |
-| 4 | 1122|
+| 1| 2846 |
+| 2| 2471 |
+| 3 | 2871 |
+| 4 | 1826|
+| 5| 224|
+| >5 | 256|
+
 
 If you use this dataset please cite:
 
@@ -51,6 +54,9 @@ The intrinsic evaluation will be done by ROUGE, using ROUGE-1, -2, -L metrics. I
 ### Submission Instructions
 
 Evaluation Script: https://github.com/allenai/mup/blob/main/scoring_program/evaluate.py
+
+### Leaderboard
+TBD
 
 ### Shared Task Timelines
 
