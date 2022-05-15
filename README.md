@@ -53,7 +53,7 @@ The intrinsic evaluation will be done by ROUGE, using ROUGE-1, -2, -L metrics. I
 
 ### Submission Instructions
 
-Evaluation Script: https://github.com/allenai/mup/blob/main/scoring_program/evaluate.py
+Evaluation Script: https://github.com/allenai/mup/blob/main/codalab/kit/scoring_program/evaluate.py
 
 ### Leaderboard
 TBD
