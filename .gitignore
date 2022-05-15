@@ -129,3 +129,11 @@ dmypy.json
 .pyre/
 
 .DS_Store
+
+codalab/kit/reference_data/*
+codalab/kit/*testing*
+codalab/kit/*reference_data*
+
+
+
+
