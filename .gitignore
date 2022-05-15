@@ -133,6 +133,7 @@ dmypy.json
 codalab/kit/reference_data/*
 codalab/kit/*testing*
 codalab/kit/*reference_data*
+codalab/kit/*Archive.zip
 
 
 
