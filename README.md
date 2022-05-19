@@ -16,12 +16,12 @@ The corpus contains a total of around 10K papers, and 26.5K summaries (with aver
 This is the distribution of number of summaries:
 | Num of Summaries | Num of Papers |
 | --- | --- |
-| 1| 2846 |
-| 2| 2471 |
-| 3 | 2871 |
-| 4 | 1826|
-| 5| 224|
-| >5 | 256|
+| 1| 2276 |
+| 2| 3039 |
+| 3 | 2867 |
+| 4 | 1827|
+| 5| 225|
+| >5 | 257|
 
 
 If you use this dataset please cite:
