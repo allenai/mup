@@ -2,7 +2,11 @@
 
 This repository contains the dataset and baseline models for the Multi Perspective Scientific Document Summarization (MuP) shared task to be held at [SDP in COLING 2022](https://sdproc.org/2022/index.html).
 
-### Introduction
+## Important announcements (May 16, 2022) :
+- See below the timeline for the task.
+- If you would like to participate please fill up this [form](https://forms.gle/K2UECKvmghzDHUpo7).
+
+## Introduction
 
 Generating summaries of scientific documents is known to be a challenging task. Majority of existing work in summarization assumes only one single best gold summary for each given document. Having only one gold summary negatively impacts our ability to evaluate the quality of summarization systems as writing summaries is a subjective activity. At the same time, annotating multiple gold summaries for scientific documents can be extremely expensive as it requires domain experts to read and understand long scientific documents. This shared task will enable exploring methods for generating multi-perspective summaries. We introduce a novel summarization corpus, leveraging data from scientific peer reviews to capture diverse perspectives from the reader's point of view.
 
@@ -12,19 +16,48 @@ The corpus contains a total of around 10K papers, and 26.5K summaries (with aver
 This is the distribution of number of summaries:
 | Num of Summaries | Num of Papers |
 | --- | --- |
-| 1| 2846 |
-| 2| 2471 |
-| 3 | 2871 |
-| 4 | 1826|
-| 5| 224|
-| >5 | 256|
+| 1| 2276 |
+| 2| 3039 |
+| 3 | 2867 |
+| 4 | 1827|
+| 5| 225|
+| >5 | 257|
 
 
 If you use this dataset please cite:
 
-### MuP Data and Instructions
+## MuP Data and Instructions
 
-The dataset is hosted on Huggingface.
+You can download the data in one of the following ways:
+
+### Downlaod
+
+You can directly download the full data from this [link](https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/mup.zip).  
+`Expected size:  405M`
+
+```bash
+wget https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/mup.zip
+```
+
+The downloaded zip file includes the following files:
+
+Simplified csv files (includes the preprocessed first 2000 tokens of each paper):  
+```
+training.csv   
+validation.csv
+```
+
+Jsonlines file containing the full text of papers with section information. 
+This is the output of the pdf parsing program (ScinceParse) and would be useful if you want to utilize the full paper or information about sections or additional metadata.
+
+```
+training_complete.jsonl   
+validation_complete.jsonl
+```
+
+### Through Huggingface datasets library
+
+The dataset is also hosted on Huggingface.
 https://huggingface.co/datasets/allenai/mup
 
 You can easily download and use the dataset as following:
@@ -43,22 +76,22 @@ print(data['validation'].shape[0])  # should print 3604
 We encourage that you try your development on the validation data and use the training set for both training and hyperparameter tuning. 
 Please do not use the validation data for training. 
 
-# Test Data
+## Test Data
 
 Test data will be released at the evaluation stage. See the timeline below.
 
-# Evaluation Scheme
+## Evaluation Scheme
 
 The intrinsic evaluation will be done by ROUGE, using ROUGE-1, -2, -L metrics. In addition to that, BERTScore would be used. The average of the scores obtained against the multiple summaries would be used for final ranking.
 
-### Submission Instructions
+## Submission Instructions
 
-Evaluation Script: https://github.com/allenai/mup/blob/main/scoring_program/evaluate.py
+Evaluation Script: https://github.com/allenai/mup/blob/main/codalab/kit/scoring_program/evaluate.py
 
-### Leaderboard
+## Leaderboard
 TBD
 
-### Shared Task Timelines
+## Shared Task Timelines
 
 Training Data Release:  May 10, 2022  <br />
 Test Data Release:  June 30, 2022 <br />
@@ -68,11 +101,13 @@ Reviews Notification:  August 15, 2022 <br />
 Camera-Ready Papers Due:  September 5, 2022<br />
 Event at SDP @ COLING 2022:  October 16/17, 2022<br />
 
-### License
+## License
 
-### Disclaimer
+The data is released under the 'ODC-BY' license.
 
-### MuP 2022 Organizers
+## Disclaimer
+
+## MuP 2022 Organizers
 
 1. [Guy Feigenblat - Piiano](https://Piiano.com)
 2. [Arman Cohan- AI2](http://armancohan.com/)
