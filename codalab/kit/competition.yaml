@@ -2,8 +2,10 @@ title: Multi Perspective Scientific Document Summarization
 description: A Shared Task at the Coling 2022 conference that focuses on Multi Perspective Scientific Document Summarization. It is one of the shared tasks conducted as part of the 3rd Workshop on Scholarly Document Processing
 image: logo.jpg
 has_registration: True
-#competition_docker_image: 'codalab/codalab-legacy:py37'
-competition_docker_image: 'codalab/codalab-legacy:gpu'
+competition_docker_image: 'codalab/codalab-legacy:py37'
+#competition_docker_image: 'codalab/codalab-legacy:gpu'
+#competition_docker_image: ''
+
 html:
     overview: overview.html
     evaluation: evaluation.html
@@ -13,7 +15,7 @@ phases:
     1:
         phasenumber: 1
         label: "Test Set Evaluation"
-        start_date: 2022-07-01
+        start_date: 2022-01-01
         max_submissions: 25
         scoring_program: scoring_program.zip
         reference_data: reference_data.zip

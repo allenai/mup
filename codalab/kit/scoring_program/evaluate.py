@@ -7,7 +7,7 @@ try:
     # installing dependencies
     os.system("pip install rouge-score")
     os.system("pip install pandas")
-    os.system("pip install bert-score")
+    #os.system("pip install bert-score")
 except Exception as e:
     print("Error occurred while installing dependencies ", e)
     exit()
@@ -22,10 +22,9 @@ if not os.path.isdir(submit_dir):
     print(f"{submit_dir} doesn't exist")
 
 
-def evaluate_metrics(test_annotation_file, user_submission_file, use_bertscore=True):
+def evaluate_metrics(test_annotation_file, user_submission_file, use_bertscore=False):
     from rouge_score import rouge_scorer
     import pandas as pd
-    from bert_score import score as bert_score_func
 
     metrics = ['rouge1', 'rouge2', 'rougeL']
     ground_truth_df = pd.read_csv(test_annotation_file)
@@ -55,27 +54,28 @@ def evaluate_metrics(test_annotation_file, user_submission_file, use_bertscore=T
 
         print(f"evaluating summary for article with id '{article_id}'")
         scores = scorer.score(ground_truth_summary.strip(), submission_summary.strip())
-        final_score = []
+        
         for rouge_metric in metrics:
             results[rouge_metric + "_f"].append(scores[rouge_metric].fmeasure)
             results[rouge_metric + "_r"].append(scores[rouge_metric].recall)
-            final_score += [scores[rouge_metric].fmeasure]
 
         if use_bertscore:
+            from bert_score import score as bert_score_func
             bertscore_summaries[0].append(submission_summary.strip())
             bertscore_summaries[1].append(ground_truth_summary.strip())
 
     metrics_scores = {rouge_metric: np.average(rouge_metric_scores)
                       for (rouge_metric, rouge_metric_scores) in results.items()}
+    avg_score = [metric_score for metric_name, metric_score in metrics_scores.items() if '_f' in metric_name]
 
     if use_bertscore:
         (P, R, F) = bert_score_func(cands=bertscore_summaries[0], refs=bertscore_summaries[1], lang="en")
         metrics_scores['BERTScore_P'] = P.mean().item()
         metrics_scores['BERTScore_R'] = R.mean().item()
         metrics_scores['BERTScore_F'] = F.mean().item()
-        final_score += [F.mean().item()]
+        avg_score.append(F.mean().item())
 
-    metrics_scores['Metrics_Avg'] = sum(final_score) / len(final_score)
+    metrics_scores['Metrics_Avg'] = sum(avg_score) / len(avg_score)
     return metrics_scores
 
 
@@ -88,6 +88,9 @@ if os.path.isdir(submit_dir) and os.path.isdir(truth_dir):
 
     truth_file = os.path.join(truth_dir, "testing.csv")
     submission_answer_file = os.path.join(submit_dir, "testing.csv")
+    if not os.path.exists(submission_answer_file):
+        print(f"Submission file with name 'testing.csv' doesn't exist, please make sure to submit a single zip file that contains 'testing.csv'")
+        raise Exception(f"Submission file with name 'testing.csv' doesn't exist, please make sure to submit a single zip file that contains 'testing.csv'")
 
     eval_scores = evaluate_metrics(test_annotation_file=truth_file, user_submission_file=submission_answer_file)
     for metric, metric_score in eval_scores.items():
