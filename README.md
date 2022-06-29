@@ -82,9 +82,19 @@ Test data will be released at the evaluation stage. See the timeline below.
 
 ## Evaluation Scheme
 
-The intrinsic evaluation will be done by ROUGE, using ROUGE-1, -2, -L metrics. In addition to that, BERTScore would be used. The average of the scores obtained against the multiple summaries would be used for final ranking.
+The intrinsic evaluation will be done by ROUGE, using ROUGE-1, -2, -L metrics. The average of the ROUGE-F scores obtained against the multiple summaries would be used for final ranking.
 
 ## Submission Instructions
+We will use [Codalab](https://codalab.lisn.upsaclay.fr/) to evaluate submissions against the test set.
+Please follow the below instructions: 
+1. Create codalab account 
+2. Create a csv file with your test set summary results. The submission should be **a single csv file** containing **all summaries**. The file should have two columns: 
+```csv
+paper_id,summary
+```
+3. Create a zip of your csv file
+4. In Codalab, select the Participate tab--> Submit / View Results --> Select the Submit button and choose your zip file. The table below the submit button will show the status of your submission.
+5. Once the submission is uploaded and evaluated against the hidden test set the status will change to Finished. You can choose to report your results to the leaderboard or to download the scores to a text file by selecting the `Download output from scoring step` option. 
 
 Evaluation Script: https://github.com/allenai/mup/blob/main/codalab/kit/scoring_program/evaluate.py
 
