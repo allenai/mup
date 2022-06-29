@@ -101,7 +101,7 @@ paper_id,summary
 Evaluation Script: https://github.com/allenai/mup/blob/main/codalab/kit/scoring_program/evaluate.py
 
 ## Leaderboard
-[TBD](https://codalab.lisn.upsaclay.fr/competitions/XXXXX#results)
+[https://codalab.lisn.upsaclay.fr/competitions/XXXXX#results](https://codalab.lisn.upsaclay.fr/competitions/XXXXX#results)
 
 ## Shared Task Timelines
 
