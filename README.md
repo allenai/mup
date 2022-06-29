@@ -86,15 +86,16 @@ The intrinsic evaluation will be done by ROUGE, using ROUGE-1, -2, -L metrics. T
 
 ## Submission Instructions
 We will use [Codalab](https://codalab.lisn.upsaclay.fr/) to evaluate submissions against the test set.
-Please follow the below instructions: 
-1. Create codalab account 
-2. Create a csv file with your test set summary results. The submission should be **a single csv file** containing **all summaries**. The file should have two columns: 
+Please follow the below instructions to evaluate and report your team results: 
+1. Create a [Codalab](https://codalab.lisn.upsaclay.fr/) account 
+2. Create a `.csv` file with your system generated summaries on the test set. The submission should be **a single csv file** containing **all summaries**. The `.csv` file should have two columns: 
 ```csv
 paper_id,summary
 ```
-3. Create a zip of your csv file
-4. In Codalab, select the Participate tab--> Submit / View Results --> Select the Submit button and choose your zip file. The table below the submit button will show the status of your submission.
-5. Once the submission is uploaded and evaluated against the hidden test set the status will change to Finished. You can choose to report your results to the leaderboard or to download the scores to a text file by selecting the `Download output from scoring step` option. 
+3. Compress the `.csv` file into a zip file
+4. Login to Codalab, select the competition: . 
+5. Select the Participate tab--> [Submit / View Results](https://codalab.lisn.upsaclay.fr/competitions/____#participate-submit_results). Select the Submit button and choose your local file system zip file (from setep 3). The table below the submit button will show the status of your submission.
+6. Once the submission is uploaded and evaluated against the hidden test set the status will change to Finished. You can choose to report your results to the leaderboard or to download the scores to a text file by selecting the `Download output from scoring step` option. 
 
 Evaluation Script: https://github.com/allenai/mup/blob/main/codalab/kit/scoring_program/evaluate.py
 
