@@ -95,7 +95,7 @@ paper_id,summary
 ```
 3. Compress the `.csv` file into a zip file
 4. Login to Codalab, select the competition: . 
-5. Select the Participate tab--> [Submit / View Results](https://codalab.lisn.upsaclay.fr/competitions/____#participate-submit_results). Select the Submit button and choose your local file system zip file (from setep 3). The table below the submit button will show the status of your submission.
+5. Select the Participate tab--> [Submit / View Results](https://codalab.lisn.upsaclay.fr/competitions/____#participate-submit_results). Select the Submit button and choose your local zip file (from step 3). The table below the Submit button will show the status of your submission.
 6. Once the submission is uploaded and evaluated against the hidden test set the status will change to Finished. You can choose to report your results to the leaderboard or to download the scores to a text file by selecting the `Download output from scoring step` option. 
 
 Evaluation Script: https://github.com/allenai/mup/blob/main/codalab/kit/scoring_program/evaluate.py
