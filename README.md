@@ -86,7 +86,7 @@ You can directly download the full data from this link.
 The intrinsic evaluation will be done by ROUGE, using ROUGE-1, -2, -L metrics. The average of the ROUGE-F scores obtained against the multiple summaries would be used for final ranking.
 
 ## Submission Instructions
-We will use [Codalab](https://codalab.lisn.upsaclay.fr/) to evaluate submissions against the test set.
+We will use [Codalab](https://codalab.lisn.upsaclay.fr/) to evaluate submissions against the hidden test set.
 Please follow the below instructions to evaluate and report your team results: 
 1. Create a [Codalab](https://codalab.lisn.upsaclay.fr/) account 
 2. Create a `.csv` file with your system generated summaries on the test set. The submission should be **a single csv file** containing **all generated test set summaries**. The `.csv` file should have two columns: 
