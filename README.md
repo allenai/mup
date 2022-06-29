@@ -30,7 +30,7 @@ If you use this dataset please cite:
 
 You can download the data in one of the following ways:
 
-### Downlaod
+### Download
 
 You can directly download the full data from this [link](https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/mup.zip).  
 `Expected size:  405M`
@@ -78,7 +78,8 @@ Please do not use the validation data for training.
 
 ## Test Data
 
-Test data will be released at the evaluation stage. See the timeline below.
+Test data will be released at the evaluation stage. See the timeline below. 
+You can directly download the full data from this link.
 
 ## Evaluation Scheme
 
@@ -100,7 +101,7 @@ paper_id,summary
 Evaluation Script: https://github.com/allenai/mup/blob/main/codalab/kit/scoring_program/evaluate.py
 
 ## Leaderboard
-TBD
+[TBD](https://codalab.lisn.upsaclay.fr/competitions/XXXXX#results)
 
 ## Shared Task Timelines
 
