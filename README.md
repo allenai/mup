@@ -30,7 +30,7 @@ If you use this dataset please cite:
 
 You can download the data in one of the following ways:
 
-### Downlaod
+### Download
 
 You can directly download the full data from this [link](https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/mup.zip).  
 `Expected size:  405M`
@@ -78,18 +78,33 @@ Please do not use the validation data for training.
 
 ## Test Data
 
-Test data will be released at the evaluation stage. See the timeline below.
+Test data will be released at the evaluation stage. See the timeline below. 
+You can directly download the full data from this link.
 
 ## Evaluation Scheme
 
-The intrinsic evaluation will be done by ROUGE, using ROUGE-1, -2, -L metrics. In addition to that, BERTScore would be used. The average of the scores obtained against the multiple summaries would be used for final ranking.
+The intrinsic evaluation will be done by ROUGE, using ROUGE-1, -2, -L metrics. The average of the ROUGE-F scores obtained against the multiple summaries would be used for final ranking.
 
 ## Submission Instructions
+We will use [Codalab](https://codalab.lisn.upsaclay.fr/) to evaluate submissions against the hidden test set.
+Please follow the below instructions to evaluate and report your team results: 
+1. Create a [Codalab](https://codalab.lisn.upsaclay.fr/) account 
+2. In the "User Settings" pane, and under "Competition settings", set "Team name" to the name you are using for the shared task (this name will appear in the leaderboard)
+3. Create a `testing.csv` file with your system generated summaries on the test set. The submission should be **a single csv file** containing **all generated test set summaries**. The file should have two columns: 
+```csv
+paper_id,summary
+```
+3. Compress `testing.csv` file into `testing.zip` file
+4. Login to Codalab, select the competition: [https://codalab.lisn.upsaclay.fr/competitions/5676](https://codalab.lisn.upsaclay.fr/competitions/5676)
+5. Select the Participate tab--> [Submit / View Results](https://codalab.lisn.upsaclay.fr/competitions/5676#participate-submit_results). Select the Submit button and choose your local `testing.zip` file (from step 3). The table below the Submit button will show the status of your submission.
+6. Once the submission is uploaded and evaluated against the hidden test set the status will change to Finished. You can choose to report your results to the leaderboard or to download the scores to a text file by selecting the `Download output from scoring step` option. 
+
+**Make sure to report the highest obtained score to the leaderboard before the evaluation period ends**
 
 Evaluation Script: https://github.com/allenai/mup/blob/main/codalab/kit/scoring_program/evaluate.py
 
 ## Leaderboard
-TBD
+[https://codalab.lisn.upsaclay.fr/competitions/5676#results](https://codalab.lisn.upsaclay.fr/competitions/5676#results)
 
 ## Shared Task Timelines
 
