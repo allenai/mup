@@ -34,7 +34,7 @@ def evaluate_metrics(test_annotation_file, user_submission_file, use_bertscore=F
 
     scorer = rouge_scorer.RougeScorer(metrics, use_stemmer=True)
     results = {"rouge1_f": [], "rouge1_r": [], "rouge2_f": [], "rouge2_r": [], "rougeL_f": [], "rougeL_r": []}
-    if len(ground_truth_df['paper_id'].unique()) == len(submission_df['paper_id'].unique()):
+    if len(ground_truth_df['paper_id'].unique()) != len(submission_df['paper_id'].unique()):
         print("Warning, number of unique 'paper_id's in submission is not equal to number of unique 'paper_id's in "
               "ground truth")
 

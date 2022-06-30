@@ -2,9 +2,12 @@ title: Multi Perspective Scientific Document Summarization
 description: A Shared Task at the Coling 2022 conference that focuses on Multi Perspective Scientific Document Summarization. It is one of the shared tasks conducted as part of the 3rd Workshop on Scholarly Document Processing
 image: logo.jpg
 has_registration: True
-competition_docker_image: 'codalab/codalab-legacy:py37'
-#competition_docker_image: 'codalab/codalab-legacy:gpu'
+#competition_docker_image: 'codalab/codalab-legacy:py37'
+competition_docker_image: 'codalab/codalab-legacy:gpu'
 #competition_docker_image: ''
+enable_detailed_results: true
+anonymous_leaderboard: false
+allow_teams: True
 
 html:
     overview: overview.html
@@ -16,14 +19,20 @@ phases:
         phasenumber: 1
         label: "Test Set Evaluation"
         start_date: 2022-01-01
-        max_submissions: 25
         scoring_program: scoring_program.zip
         reference_data: reference_data.zip
+        color: green
+        description: 'Test phase: submit results on test data; Submit a single zip file that contains your testing.csv file'
+        execution_time_limit: 1600
+        label: TestSet
+        max_submissions: 50
+        max_submissions_per_day: 15
+
 leaderboard:
     leaderboards:
         RESULTS: &RESULTS
             label: Results
-            rank: 1
+            rank: 7
     columns:
         rouge1_f:
             leaderboard: *RESULTS
@@ -43,36 +52,21 @@ leaderboard:
         rouge2_r:
             leaderboard: *RESULTS
             label: rouge2_r
-            rank: 5
+            rank: 4
             numeric_format: 2
         rougeL_f:
             leaderboard: *RESULTS
             label: rougeL_f
-            rank: 6
+            rank: 5
             numeric_format: 2
         rougeL_r:
             leaderboard: *RESULTS
             label: rougeL_r
-            rank: 7
-            numeric_format: 2
-        BERTScore_P:
-            leaderboard: *RESULTS
-            label: BERTScore_P
-            rank: 8
-            numeric_format: 2
-        BERTScore_R:
-            leaderboard: *RESULTS
-            label: BERTScore_R
-            rank: 9
-            numeric_format: 2
-        BERTScore_F:
-            leaderboard: *RESULTS
-            label: BERTScore_F
-            rank: 10
+            rank: 6
             numeric_format: 2
         Metrics_Avg:
             leaderboard: *RESULTS
-            label: Metrics Avg. Score
-            rank: 11
+            label: Avg. ROUGE F scores
+            rank: 7
             numeric_format: 2
 
