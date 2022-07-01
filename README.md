@@ -78,7 +78,7 @@ Please do not use the validation data for training.
 
 ## Test Data
 
-Test data will be released at the evaluation stage. See the timeline below. 
+Here is the link to the test data: https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/testing_with_paper_release.jsonl.zip 
 You can directly download the full data from this link.
 
 ## Evaluation Scheme
