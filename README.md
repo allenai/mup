@@ -3,7 +3,7 @@
 This repository contains the dataset and baseline models for the Multi Perspective Scientific Document Summarization (MuP) shared task to be held at [SDP in COLING 2022](https://sdproc.org/2022/index.html).
 
 ## Important announcements 
-- [July 1, 2022] The test set is now available. Please see [below](https://github.com/allenai/mup#test-data).  
+- [July 1, 2022] The test set is now available. Please see [below](#test-data).  
 - [May 16, 2022] Please see below the [timeline](https://github.com/allenai/mup#shared-task-timelines) for the task.
 - [May 16, 2022] If you would like to participate please fill up this [form](https://forms.gle/K2UECKvmghzDHUpo7).
 
