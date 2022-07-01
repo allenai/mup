@@ -78,7 +78,7 @@ Please do not use the validation data for training.
 
 ## Test Data
 
-Here is the link to the test data: https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/testing_with_paper_release.jsonl.zip
+[NEW] Here is the link to the test data: https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/testing_with_paper_release.jsonl.zip
 
 ## Evaluation Scheme
 
