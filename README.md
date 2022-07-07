@@ -3,6 +3,7 @@
 This repository contains the dataset and baseline models for the Multi Perspective Scientific Document Summarization (MuP) shared task to be held at [SDP in COLING 2022](https://sdproc.org/2022/index.html).
 
 ## Important announcements 
+- [July 6, 2022] Baseline results added. Please see [below](#baselines).
 - [July 1, 2022] The test set is now available. Please see [below](#test-data).  
 - [May 16, 2022] Please see below the [timeline](https://github.com/allenai/mup#shared-task-timelines) for the task.
 - [May 16, 2022] If you would like to participate please fill up this [form](https://forms.gle/K2UECKvmghzDHUpo7).
@@ -105,6 +106,14 @@ Evaluation Script: https://github.com/allenai/mup/blob/main/codalab/kit/scoring_
 
 ## Leaderboard
 [https://codalab.lisn.upsaclay.fr/competitions/5676#results](https://codalab.lisn.upsaclay.fr/competitions/5676#results)
+
+## Baselines
+
+We include a simple baseline of BART Large trained on CNN/DM summarization dataset.
+
+|                | ROUGE-1 | ROUGE-2 | ROUGE-L |
+|----------------|---------|---------|---------|
+| BART-Large-CNN | 40.8    | 12.3    | 24.5    |
 
 ## Shared Task Timelines
 
