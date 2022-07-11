@@ -80,7 +80,13 @@ Please do not use the validation data for training.
 
 ## Test Data
 
-<mark>[NEW]</mark> Here is the link to the test data: https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/testing_with_paper_release.jsonl.zip
+<mark>[NEW]</mark> The test data is now available:  
+
+| Data split | Format | Description | Link |
+| -------- | ----- | ----------- | ---------- |
+| Test set | jsonl | full format | [Download](https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/testing_with_paper_release.jsonl.zip) |
+| Test set | CSV   | simplified  | [Download](https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/test-release-simple.csv.zip) |
+
 
 ## Evaluation Scheme
 
