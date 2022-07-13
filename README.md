@@ -117,9 +117,9 @@ Evaluation Script: https://github.com/allenai/mup/blob/main/codalab/kit/scoring_
 
 We include a simple baseline of BART Large trained on CNN/DM summarization dataset.
 
-|                | ROUGE-1 | ROUGE-2 | ROUGE-L |
-|----------------|---------|---------|---------|
-| BART-Large-CNN | 40.8    | 12.3    | 24.5    |
+|                | ROUGE-1 | ROUGE-2 | ROUGE-L | Avg. |
+|----------------|---------|---------|---------|------|
+| BART-Large-CNN | 40.8    | 12.3    | 24.5    | 25.8 |
 
 ## Shared Task Timelines
 
