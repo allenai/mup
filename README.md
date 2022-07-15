@@ -3,6 +3,7 @@
 This repository contains the dataset and baseline models for the Multi Perspective Scientific Document Summarization (MuP) shared task to be held at [SDP in COLING 2022](https://sdproc.org/2022/index.html).
 
 ## Important announcements 
+- [July 15, 2022] Evaluation period extended by a week. The deadline for submission is now July 22, 2022. [Timeline](#Shared-Task-Timelines).
 - [July 6, 2022] Baseline results added. Please see [below](#baselines).
 - [July 1, 2022] The test set is now available. Please see [below](#test-data).  
 - [May 16, 2022] Please see below the [timeline](https://github.com/allenai/mup#shared-task-timelines) for the task.
@@ -123,9 +124,11 @@ We include a simple baseline of BART Large trained on CNN/DM summarization datas
 
 ## Shared Task Timelines
 
+All times are AoE (Anywhere on Eeath).
+
 Training Data Release:  May 10, 2022  <br />
 Test Data Release:  June 30, 2022 <br />
-Evaluation Period:  July 15, 2022 <br />
+Evaluation Period:  ~~July 15, 2022~~ July 22, 2022 <br />
 System Description Papers Due:  August 1, 2022<br />
 Reviews Notification:  August 15, 2022 <br />
 Camera-Ready Papers Due:  September 5, 2022<br />
