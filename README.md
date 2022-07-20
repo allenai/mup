@@ -136,7 +136,7 @@ Evaluation Script: https://github.com/allenai/mup/blob/main/codalab/kit/scoring_
 ## Leaderboard
 [https://codalab.lisn.upsaclay.fr/competitions/5676#results](https://codalab.lisn.upsaclay.fr/competitions/5676#results)
 
-## Baselines
+# Baselines
 
 We include a simple baseline of BART Large trained on CNN/DM summarization dataset.
 
@@ -144,7 +144,7 @@ We include a simple baseline of BART Large trained on CNN/DM summarization datas
 |----------------|---------|---------|---------|------|
 | BART-Large-CNN | 40.8    | 12.3    | 24.5    | 25.8 |
 
-## Shared Task Timelines
+# Shared Task Timelines
 
 All times are AoE (Anywhere on Eeath).
 
