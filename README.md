@@ -2,14 +2,30 @@
 
 This repository contains the dataset and baseline models for the Multi Perspective Scientific Document Summarization (MuP) shared task to be held at [SDP in COLING 2022](https://sdproc.org/2022/index.html).
 
-## Important announcements 
+Table of contents
+=================
+
+<!--ts-->
+   * [Important announcements](#important-announcements) 
+   * [Dataset](#mup-dataset)
+     * [Training and validation data](#training-and-validation-data)
+     * [Test data](#test-data) 
+   * [Submission Instructions](#submission-instructions)
+   * [Leaderboard](#leaderboard)
+   * [Baselines](#baselines)
+   * [Important dates](#shared-task-timelines)
+   * [Organizers](#mup-2022-organizers)
+<!--te-->
+
+
+# Important announcements 
 - [July 15, 2022] Evaluation period extended by a week. The deadline for submission is now July 22, 2022. [Timeline](#Shared-Task-Timelines).
 - [July 6, 2022] Baseline results added. Please see [below](#baselines).
 - [July 1, 2022] The test set is now available. Please see [below](#test-data).  
 - [May 16, 2022] Please see below the [timeline](https://github.com/allenai/mup#shared-task-timelines) for the task.
 - [May 16, 2022] If you would like to participate please fill up this [form](https://forms.gle/K2UECKvmghzDHUpo7).
 
-## Introduction
+# Introduction
 
 Generating summaries of scientific documents is known to be a challenging task. Majority of existing work in summarization assumes only one single best gold summary for each given document. Having only one gold summary negatively impacts our ability to evaluate the quality of summarization systems as writing summaries is a subjective activity. At the same time, annotating multiple gold summaries for scientific documents can be extremely expensive as it requires domain experts to read and understand long scientific documents. This shared task will enable exploring methods for generating multi-perspective summaries. We introduce a novel summarization corpus, leveraging data from scientific peer reviews to capture diverse perspectives from the reader's point of view.
 
@@ -29,14 +45,17 @@ This is the distribution of number of summaries:
 
 If you use this dataset please cite:
 
-## MuP Data and Instructions
+# MuP Dataset
+
+## Training and validation data
 
 You can download the data in one of the following ways:
 
-### Download
+#### Direct Download
 
-You can directly download the full data from this [link](https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/mup.zip).  
-`Expected size:  405M`
+| Data split | Format | Description | Link | Size |
+| -------- | ----- | ----------- | ---------- | -------- |
+| Train/Val | CSV and Jsonlines | full format + simplified | [Download](https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/mup.zip) | 405M |
 
 ```bash
 wget https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/mup.zip
@@ -44,13 +63,14 @@ wget https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/mup.z
 
 The downloaded zip file includes the following files:
 
-Simplified csv files (includes the preprocessed first 2000 tokens of each paper):  
+**CSV**: Simplified csv files (includes the preprocessed first 2000 tokens of each paper):  
 ```
 training.csv   
 validation.csv
 ```
 
-Jsonlines file containing the full text of papers with section information. 
+**Jsonlines**:  
+Jsonlines file contains the full format of papers with section information and additional metadata. 
 This is the output of the pdf parsing program (ScinceParse) and would be useful if you want to utilize the full paper or information about sections or additional metadata.
 
 ```
@@ -58,7 +78,7 @@ training_complete.jsonl
 validation_complete.jsonl
 ```
 
-### Through Huggingface datasets library
+#### Through Huggingface datasets library
 
 The dataset is also hosted on Huggingface.
 https://huggingface.co/datasets/allenai/mup
@@ -76,6 +96,7 @@ print(data['train'].shape[0])  # should print 18934
 print(data['validation'].shape[0])  # should print 3604
 ```
 
+**NOTE:**  
 We encourage that you try your development on the validation data and use the training set for both training and hyperparameter tuning. 
 Please do not use the validation data for training. 
 
@@ -88,6 +109,7 @@ Please do not use the validation data for training.
 | Test set | jsonl | full format | [Download](https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/testing_with_paper_release.jsonl.zip) |
 | Test set | CSV   | simplified  | [Download](https://ai2-s2-research-public.s3-us-west-2.amazonaws.com/mup-dataset/test-release-simple.csv.zip) |
 
+We will make the full dataset available on huggingface datasets library soon.
 
 ## Evaluation Scheme
 
