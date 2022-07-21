@@ -19,6 +19,7 @@ Table of contents
 
 
 # Important announcements 
+- [July 21, 2022] Evaluation period extended to August 1st, 2022. [Timeline](#Shared-Task-Timelines).
 - [July 15, 2022] Evaluation period extended by a week. The deadline for submission is now July 22, 2022. [Timeline](#Shared-Task-Timelines).
 - [July 6, 2022] Baseline results added. Please see [below](#baselines).
 - [July 1, 2022] The test set is now available. Please see [below](#test-data).  
@@ -150,9 +151,9 @@ All times are AoE (Anywhere on Eeath).
 
 Training Data Release:  May 10, 2022  <br />
 Test Data Release:  June 30, 2022 <br />
-Evaluation Period:  ~~July 15, 2022~~ July 22, 2022 <br />
-System Description Papers Due:  August 1, 2022<br />
-Reviews Notification:  August 15, 2022 <br />
+Evaluation Period:  ~~July 15, 2022~~ August 1st, 2022 <br />
+System Description Papers Due:  ~~August 1, 2022~~ August 8, 2022<br />
+Reviews Notification:  ~~August 15, 2022~~ August 22, 2022 <br />
 Camera-Ready Papers Due:  September 5, 2022<br />
 Event at SDP @ COLING 2022:  October 16/17, 2022<br />
 
