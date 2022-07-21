@@ -147,15 +147,15 @@ We include a simple baseline of BART Large trained on CNN/DM summarization datas
 
 # Shared Task Timelines
 
-All times are AoE (Anywhere on Eeath).
+All times are AoE (Anywhere on Earth).
 
-Training Data Release:  May 10, 2022  <br />
-Test Data Release:  June 30, 2022 <br />
-Evaluation Period:  ~~July 15, 2022~~ August 1st, 2022 <br />
-System Description Papers Due:  ~~August 1, 2022~~ August 8, 2022<br />
-Reviews Notification:  ~~August 15, 2022~~ August 22, 2022 <br />
-Camera-Ready Papers Due:  September 5, 2022<br />
-Event at SDP @ COLING 2022:  October 16/17, 2022<br />
+* Training Data Release:  May 10, 2022  <br />
+* Test Data Release:  June 30, 2022 <br />
+* Evaluation Period:  ~~July 15, 2022~~ August 1st, 2022 <br />
+* System Description Papers Due:  ~~August 1, 2022~~ August 8, 2022<br />
+* Reviews Notification:  ~~August 15, 2022~~ August 22, 2022 <br />
+* Camera-Ready Papers Due:  September 5, 2022<br />
+* Event at SDP @ COLING 2022:  October 16/17, 2022<br />
 
 ## License
 
